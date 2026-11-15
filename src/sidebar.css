@@ -1,0 +1,9 @@
+/* Scope narrow-pane adjustments to this fork, not other plugin panels. */
+[data-dsh-plugin="skill-center-right"] { min-width: 0; }
+[data-dsh-plugin="skill-center-right"] .ptK59a_panel { box-sizing: border-box; padding: 10px; }
+[data-dsh-plugin="skill-center-right"] .ptK59a_tabBar { overflow-x: auto; }
+[data-dsh-plugin="skill-center-right"] .ptK59a_tab { flex: 1; padding: 7px 8px; }
+[data-dsh-plugin="skill-center-right"] .ptK59a_select,
+[data-dsh-plugin="skill-center-right"] .ptK59a_input { box-sizing: border-box; max-width: 100%; min-width: 0; }
+[data-dsh-plugin="skill-center-right"] .ptK59a_skillHeader { flex-wrap: wrap; }
+[data-dsh-plugin="skill-center-right"] .ptK59a_skillName { overflow-wrap: anywhere; }

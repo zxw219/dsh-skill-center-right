@@ -1,0 +1,7 @@
+# Reversible override: removing this bundle restores the original row.
+- id: ui-skill-explorer
+  disabled: true
+
+- insert:
+    - id: skill-center-right
+      name: dsh-skill-center-right

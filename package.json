@@ -1,0 +1,27 @@
+{
+  "name": "dsh-skill-center-right",
+  "version": "0.4.18-sidebar.1",
+  "description": "Skill Center in the native DSH right sidebar, based on skill-explorer 0.4.18.",
+  "type": "module",
+  "license": "BSD-3-Clause",
+  "icon": "icon.svg",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./locale/en.json": "./locale/en.json"
+  },
+  "files": ["lib", "locale", "icon.svg", "cordis.patch.yml", "README.md", "LICENSE", "NOTICE", "build.mjs", "check.mjs", "src", "vendor"],
+  "scripts": {"build": "node build.mjs", "test": "node check.mjs"},
+  "peerDependencies": {"@deepseek-ai/dsh": ">=0.2.2-rc.3", "react": "^18.2.0"},
+  "dsh": {
+    "engines": {"dsh": ">=0.2.2-rc.3"},
+    "bundle": {"patch": "./cordis.patch.yml"},
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-renderer", "@deepseek-ai/dsh-client-ui-sidebar-right"],
+      "platform": "web"
+    }
+  }
+}

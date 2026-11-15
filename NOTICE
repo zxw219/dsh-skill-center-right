@@ -1,0 +1,10 @@
+Based on @linxin666/dsh-client-ui-skill-explorer version 0.4.18.
+Upstream: https://github.com/zhu1090093659/dsh-web
+Copyright (c) 2026, zhu1090093659. BSD-3-Clause; see LICENSE.
+
+The upstream host distribution is preserved unchanged in lib/index.js.
+The upstream client distribution is preserved in vendor/client-0.4.18.js.
+Local modifications replace the global center page with a native right-sidebar
+page and apply scoped narrow-pane CSS. No upstream telemetry heartbeat is
+invoked by the replacement client entry.
+This fork is not endorsed by the upstream authors.
